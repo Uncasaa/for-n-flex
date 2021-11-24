@@ -47,3 +47,16 @@
     align-items: center;
     height: 100vh;
 }
+
+div {
+    height: 5vh;
+    box-shadow: 8px -8px 7px 7px #68C9FF;
+    padding: 20px;
+}
+
+div.container:hover {
+  transform: scale(2);
+  background-color: #68C9FF;
+  box-shadow: none;
+  text-align: center;
+}
