@@ -1,62 +1,78 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    outline: none;
-    text-decoration: none;
-    outline: none;
-    font-family: inherit;
-    box-sizing: border-box;
-  }
-  
-  ol, ul, li {
-    list-style: none;
-    display: block;
-  }
-  
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  
-  a img {
-    border: none;
-  }
-  
-  button, a {
-    cursor: pointer;
-    color: inherit;
-  }
-  
-  textarea {
-    resize: none;
-  }
-  
-  button, input, textarea, select {
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    border-radius: 0;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  outline: none;
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button, a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button, input, textarea, select {
+  -moz-appearance: none !important;
+       appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+}
 
 #root {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
 }
 
 div {
-    height: 5vh;
-    box-shadow: 8px -8px 7px 7px #68C9FF;
-    padding: 20px;
+  height: 5vh;
+  -webkit-box-shadow: 8px -8px 7px 7px #68C9FF;
+          box-shadow: 8px -8px 7px 7px #68C9FF;
+  padding: 20px;
 }
 
 div.container:hover {
-  transform: scale(2);
+  -webkit-transform: scale(2);
+          transform: scale(2);
   background-color: #68C9FF;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   text-align: center;
 }
+/*# sourceMappingURL=style.css.map */

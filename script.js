@@ -37,12 +37,26 @@ function loadEvent() {
 // string nem mukodik, ures tombot ad vissza. 
 
     const root = document.getElementById("root");
+
+    root.insertAdjacentHTML("beforeend", `<div id="cards"></div>`);
+    const cards = document.getElementById("cards");
+
+    root.insertAdjacentHTML("beforeend", `<div id="tools"></div>`);
+    const tools = document.getElementById("tools");
+
+
+    root.insertAdjacentHTML("beforeend")
+
+
+
+
     const list = generateArray(60);
     console.log(list);
 
     if (list[0] !== "error") {
+        tools.insertAdjacentHTML("afterbegin", `<input placeholder="ird ide a szamokat.">`);
         for (const item of list) {
-            root.insertAdjacentHTML("beforeend", `<div class="container">${item}</div>`)
+            cards.insertAdjacentHTML("beforeend", `<div class="container">${item}</div>`)
         }
     }
 
